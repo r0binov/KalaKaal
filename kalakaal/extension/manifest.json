@@ -1,6 +1,6 @@
 {
     "name": "phishscale",
-    "version": "0.1",
+    "version": "1",
     "description": "Chrome plugin to block malicious emails within gmail.",
     "manifest_version": 1,
     "persmissions": [
