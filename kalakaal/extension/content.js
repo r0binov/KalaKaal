@@ -15,7 +15,7 @@ gapi.client.init({
 });
 
 // Call the Gmail API to get the raw email data for a specific email
-function getEmailData(emailId) {
+export function getEmailData(emailId) {
     gapi.client.gmail.users.messages.get({
         'userId': 'me',
         'id': emailId,
