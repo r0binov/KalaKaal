@@ -4,7 +4,7 @@ var userId = 'me';
 
 // Authorize the client
 gapi.auth.authorize({
-    'client_id': 'YOUR_CLIENT_ID',
+    'client_id': '532276903581-o51emkfb244rk3h50scacl02lqe82gb3.apps.googleusercontent.com',
     'scope': 'https://www.googleapis.com/auth/gmail.readonly',
     'immediate': true
 }, function (authResult) {
