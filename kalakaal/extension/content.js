@@ -1,3 +1,7 @@
+import("https://apis.google.com/js/api.js").then(() => {
+    gapi.load("client:auth2", () => { console.log("success") });
+});
+
 // Set up the Gmail API client
 const CLIENT_ID = '532276903581-o51emkfb244rk3h50scacl02lqe82gb3.apps.googleusercontent.com';
 const API_KEY = 'AIzaSyAZc32Hd67wjLNU3GCNBCUdOCqNBPQmxdQ';
@@ -27,6 +31,6 @@ function getEmailData(emailId) {
 }
 
 function filterEmailData(rawEmailData) {
-    
+
 }
 
