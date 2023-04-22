@@ -1,8 +1,8 @@
 {
     "name": "phishscale",
-    "version": "1",
+    "version": "0.1",
     "description": "Chrome plugin to block malicious emails within gmail.",
-    "manifest_version": 1,
+    "manifest_version": 2,
     "persmissions": [
         "tabs",
         "https://www.googleapis.com/gmail/v1/users/me/labels"
@@ -12,7 +12,7 @@
         "default_icon": "warning.png"
     },
     "background": {
-        "scipts": [
+        "scripts": [
             "background.js"
         ],
         "persistent": true
