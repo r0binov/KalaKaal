@@ -1,0 +1,32 @@
+{
+    "name": "antikala",
+    "version": "0.1",
+    "description": "Chrome plugin to block malicious links within the browser window.",
+    "manifest_version": 1,
+    "persmissions": [
+        "tabs",
+        "https://www.googleapis.com/gmail/v1/users/me/labels"
+    ],
+    "action": {
+        "default_popup": "warningmessage.html",
+        "default_icon": "warning.png"
+    },
+    "background": {
+        "scipts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mail.google.com/*",
+                "https://inbox.google.com/*"
+            ],
+            "js": [
+                "inboxsdk.js",
+                "myapp.js"
+            ]
+        }
+    ]
+}
